@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Know Weather</title>
+	<link rel="stylesheet" href="weather-style.css">
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js" 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="	crossorigin="anonymous"></script>
+ 	<script src="weather-api.js"></script>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="start">
+		<img src="images/WEATHER%20API.png" alt="weatherposter">
+		<div id="searchbox">
+			<input type="text" placeholder="Location Name" id="loc" style="display: none;">
+			<img src="images/search-solid.svg" alt="searchicon" id="go" style="width: 20px; height: 20px;">	
+		</div>
+	</div>
+<div id="spinner">
+	<div class="lds-facebook"><div></div><div></div><div></div></div>
+	</div>
+	<div class="bx5 card">
+				<p id="locN"></p>
+				<p id="latt-logN"></p>
+			</div>
+	<div class="body">
+		<div class="bx1 card">
+			<h4>Weather</h4>
+			<div class="ico"></div>		
+			<p id="weath"></p>
+			<p id="descrip"></p>
+		</div>
+		<div class="bx2 card">
+			<h4>Temperature</h4>
+			<p id="temp"></p>
+			<p id="humid"></p>
+			<p id="press"></p>
+		</div>
+		<div class="bx3 card">
+			<h4>Wind Speed and Direction</h4>
+			<p id="w-speed"></p>
+			<p id="cloud"></p>
+		</div>
+		<div class="bx4 card">
+			<h4>Date and Time</h4>
+			<p id="sunriseT"></p>
+			<p id="sunsetT"></p>
+		</div>
+	</div>
+</body>
+</html>

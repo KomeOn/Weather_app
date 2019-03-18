@@ -1,0 +1,190 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	height: 100%;
+	margin: 0px;
+	font-family: Georgia, serif;
+}
+.head {
+	text-align: center;
+}
+.head>p {
+	font-size: 3rem;
+	font-style: italic;
+}
+#latt-lagN {
+	font-size: 1.6rem;
+	font-style: italic;
+}
+.body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.bx1, .bx2, .bx3, .bx4 {
+	width: 23%;
+	text-align: center;
+	visibility: hidden;
+	position: absolute;
+}
+.bx5 {
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	visibility: hidden;
+	margin-bottom: 20px;
+	position: absolute;
+}
+.bx5>p {
+	font-style: italic;
+}
+.bx5>#locN {
+	font-size: 3rem;
+}
+.bx1>h4, .bx2>h4, .bx3>h4, .bx4>h4 {
+	font-size: 1.5rem;
+	font-style: italic;
+	background-color: aqua;
+	padding: 1rem;
+	margin-top: 0px;
+}
+.card {
+	box-shadow: 0 14px 16px 0 rgba(0,0,0,0.2);
+	padding: 8px 3%;
+	margin-right: 15px;
+	position: relative;
+	border-radius: 20px;
+	background-color: white;
+}
+#start>img {
+	width: 60%; 
+	height: 60%; 
+	margin: 0px auto; 
+}
+.lds-facebook {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #2e80a5;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+#spinner {
+	display: none;
+	}
+
+
+
+#start {
+	position: relative;
+	top: 160px;
+	left: 10px;
+	text-align: center;
+}
+#searchbox {
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	display: inline-block;
+}
+
+
+.pulse {
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(30, 144, 255, 1);
+  animation: pulse 2s infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(30, 144, 255, 1);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(30, 144, 255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(30, 144, 255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(30, 144, 255, 1);
+    box-shadow: 0 0 0 0 rgba(30, 144, 255, 1);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(30, 144, 255, 0);
+      box-shadow: 0 0 0 10px rgba(30, 144, 255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(30, 144, 255, 0);
+      box-shadow: 0 0 0 0 rgba(30, 144, 255, 0);
+  }
+}
+
+@media(max-width: 420px)
+{
+	.bx1, .bx2, .bx3, .bx4, .bx5 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#searchbox {
+		top: 100%;
+	}
+	#start>img {
+		width: 100%;
+		margin: 0px;
+	}
+}
+@media(min-width: 420px) and (max-width: 760px)
+{
+	.bx1, .bx2, .bx3, .bx4, .bx5 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#start>img {
+		width: 100%;
+		margin: 0px;
+	}
+}
+@media(min-width: 760px) and (max-width: 1250px)
+{
+	.bx1, .bx2, .bx3, .bx4 {
+		width: 47%;
+		margin-bottom: 15px;
+	}
+	#start>img {
+		width: 80%;
+		margin: 0px;
+	}
+}
